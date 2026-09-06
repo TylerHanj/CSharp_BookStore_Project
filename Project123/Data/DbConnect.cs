@@ -11,7 +11,7 @@ namespace Project.Data
     public static class DbConnect
     {
         private const string ConnectString =
-            "Host=localhost;Port=5433;Database=Project;Username=postgres;Password=1234;";
+            "Host=YOUR_HOST;Port=5432;Database=YOUR_DATABASE;Username=YOUR_USERNAME;Password=YOUR_PASSWORD;";
         public static IDbConnection Create() => new NpgsqlConnection(ConnectString);
     }
 }
